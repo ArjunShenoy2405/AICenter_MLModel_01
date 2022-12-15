@@ -1,55 +1,129 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}"
-xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
-xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
-xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
-xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TextExpression.NamespacesForImplementation>
-        <sco:Collection x:TypeArguments="x:String">
-            <x:String>System.Activities</x:String>
-            <x:String>System.Activities.Statements</x:String>
-            <x:String>System.Activities.Expressions</x:String>
-            <x:String>System.Activities.Validation</x:String>
-            <x:String>System.Activities.XamlIntegration</x:String>
-            <x:String>Microsoft.VisualBasic</x:String>
-            <x:String>Microsoft.VisualBasic.Activities</x:String>
-            <x:String>System</x:String>
-            <x:String>System.Collections</x:String>
-            <x:String>System.Collections.Generic</x:String>
-            <x:String>System.Data</x:String>
-            <x:String>System.Diagnostics</x:String>
-            <x:String>System.Drawing</x:String>
-            <x:String>System.IO</x:String>
-            <x:String>System.Linq</x:String>
-            <x:String>System.Net.Mail</x:String>
-            <x:String>System.Xml</x:String>
-            <x:String>System.Xml.Linq</x:String>
-            <x:String>UiPath.Core</x:String>
-            <x:String>UiPath.Core.Activities</x:String>
-            <x:String>System.Windows.Markup</x:String>
-        </sco:Collection>
-    </TextExpression.NamespacesForImplementation>
-    <TextExpression.ReferencesForImplementation>
-        <sco:Collection x:TypeArguments="AssemblyReference">
-            <AssemblyReference>System.Activities</AssemblyReference>
-            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-            <AssemblyReference>mscorlib</AssemblyReference>
-            <AssemblyReference>System.Data</AssemblyReference>
-            <AssemblyReference>System</AssemblyReference>
-            <AssemblyReference>System.Drawing</AssemblyReference>
-            <AssemblyReference>System.Core</AssemblyReference>
-            <AssemblyReference>System.Xml</AssemblyReference>
-            <AssemblyReference>System.Xml.Linq</AssemblyReference>
-            <AssemblyReference>PresentationFramework</AssemblyReference>
-            <AssemblyReference>WindowsBase</AssemblyReference>
-            <AssemblyReference>PresentationCore</AssemblyReference>
-            <AssemblyReference>System.Xaml</AssemblyReference>
-            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-            <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-        </sco:Collection>
-    </TextExpression.ReferencesForImplementation>
-    <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1"/>
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="680,978" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="36">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,913" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="englishPhrase" />
+      <Variable x:TypeArguments="x:String" Name="frenchPhrase" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="358,248" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the English phrase here" Title="English-French Translator">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[englishPhrase]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uma:MLSkills ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SelectedMLSkill="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" ApiKey="d47606cf-89bb-4a24-9c8f-f3cc9b3db6dd" Connection="Endpoint" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="358,401" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[englishPhrase]" JsonResponse="[frenchPhrase]" NextPageNum="2" RefreshList="False" SkillURL="https://ai-uipath.deskover.com/public/mlskills/b3ead059-7383-471d-bf8f-84d63ba141f8/6be97126-3b05-49c8-abca-8be32788562d/engtofrench-mlskill" TotalCount="31">
+      <uma:MLSkills.MLSkillList>
+        <scg:List x:TypeArguments="um:MLSkill" Capacity="32">
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/complaintsegregation-mlskill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="2176649d-7794-46e1-a586-7440a6e91a5f" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="ComplaintSegregation_MLSkill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="811defdd-22cc-4c9e-bee0-d22208fd7bf2" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/custcomp-classification-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="48f7b7a6-29c7-4a95-8679-c8dd095cefa5" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="CustComp_Classification_Skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="b8bfca7e-7b96-49e4-8e42-d29d9013867e" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/customercomplaints-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="7bd048c6-aabe-4512-a6d6-9e64c2303dc4" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="CustomerComplaints_skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="ffd9e078-d8de-4c6b-8e56-824ff1a76668" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/db-englishfrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="54e034ae-4955-4c0b-8d23-1a3ad668109d" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="DB_EnglishFrench_skill" OutputDescription="Translated text in French Language." ProjectId="c00f39b2-cd52-4cec-bdf0-7a52fd5406c3" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/db-engtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="e2e67516-8e79-4c48-8c26-487b54a8966e" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="DB_EngToFrench_skill" OutputDescription="Translated text in French Language." ProjectId="c00f39b2-cd52-4cec-bdf0-7a52fd5406c3" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/du-cc-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="67111557-8d26-4865-b0f7-63b5cbe11021" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="DU_CC_skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="c00f39b2-cd52-4cec-bdf0-7a52fd5406c3" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/du-sentimentalanalysisi-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="ef952fca-3383-445e-b000-86bfeb9e2bd3" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="DU_SentimentalAnalysisi_skill" OutputDescription="Translated text in French Language." ProjectId="c00f39b2-cd52-4cec-bdf0-7a52fd5406c3" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/engtofrench-mlskill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="717f0f5f-5a7c-4e6a-bdc1-efc2454dfbf6" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="EngToFrench_MLSkill" OutputDescription="Translated text in French Language." ProjectId="811defdd-22cc-4c9e-bee0-d22208fd7bf2" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/engtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="3d322a2d-3548-4b51-bfcf-15ff43a60f87" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="EngToFrench_skill" OutputDescription="Translated text in French Language." ProjectId="ffd9e078-d8de-4c6b-8e56-824ff1a76668" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/md-engtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="52aee8f9-925f-4831-8593-68bd999c8e7c" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="MD_EngToFrench_skill" OutputDescription="Translated text in French Language." ProjectId="9ccac0d8-14d1-45fb-8d85-1bc8c72656a9" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/md-sentimentalanalysis-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="9faa0ab9-77be-4d37-a0e9-12fc171f62cd" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="MD_SentimentalAnalysis_skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="9ccac0d8-14d1-45fb-8d85-1bc8c72656a9" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/mk-cc-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="f5ecb70c-7a96-4e3a-821c-d326fde88772" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="MK_CC_skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="9383a4a1-bfca-499f-bee3-7cc945fdf724" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/mk-englishtofrench" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="7f9f13bc-e97c-4b51-97f1-b11d07a9e8c2" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="MK_EnglishToFrench" OutputDescription="Translated text in French Language." ProjectId="b8bfca7e-7b96-49e4-8e42-d29d9013867e" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/mk-engtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="2bf32d7e-ca49-435d-9626-f0fb57cd95bc" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="MK_EngToFrench_skill" OutputDescription="Translated text in French Language." ProjectId="9383a4a1-bfca-499f-bee3-7cc945fdf724" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/mk-sentimentanalysis-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="4dc75b8b-4541-48f4-84ea-1faa8414d3e0" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="MK_SentimentAnalysis_skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="9383a4a1-bfca-499f-bee3-7cc945fdf724" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/ml-sentimentanalysis" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="d46bf345-8795-4a1a-9db5-a9ca363d2a5b" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="ML_SentimentAnalysis" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="14cd7639-78e5-481e-a563-87ab834b8fd5" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/mukesh-sa-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="37165d45-9dcd-4bfa-8a2c-917a1caf4ffc" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="Mukesh_SA_Skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="b8bfca7e-7b96-49e4-8e42-d29d9013867e" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/sentimenral-analysis" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="0ab1d067-9186-4250-a693-10d1ba35fa9b" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="Sentimenral_Analysis" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="c00f39b2-cd52-4cec-bdf0-7a52fd5406c3" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/sentimentanalysis-mlskill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="f85dca6c-df41-46b6-b7da-b5b831736c6b" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="SentimentAnalysis_MLSkill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="811defdd-22cc-4c9e-bee0-d22208fd7bf2" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/sentimentanalysis-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="6520e3e9-113c-4032-acc1-a59c0de7b064" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="SentimentAnalysis_skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="ffd9e078-d8de-4c6b-8e56-824ff1a76668" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/sg-cc-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="6a6b08db-8cc8-4f13-90dc-ddc8229e2e3b" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="SG_CC_Skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="d709c2e4-9bac-4489-ac13-18e21fba84e0" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/sg-englishtofrench" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="3f632649-ed58-415c-906a-76b5f40a41fc" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="SG_EnglishToFrench" OutputDescription="Translated text in French Language." ProjectId="d709c2e4-9bac-4489-ac13-18e21fba84e0" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/sg-sentimentanalysis-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="f3ce47ce-315e-4849-a339-f67f18fd792f" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="SG_SentimentAnalysis_Skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="d709c2e4-9bac-4489-ac13-18e21fba84e0" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/ss-cc-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="da370814-60ee-4d84-8421-94c1be1fe14f" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="SS_CC_Skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="4ff5f9ab-756c-447d-b55a-40b760a02062" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/ss-engtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="940ac6b3-da68-4ef3-8f5b-9ce67b352b29" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="SS_EngToFrench_skill" OutputDescription="Translated text in French Language." ProjectId="4ff5f9ab-756c-447d-b55a-40b760a02062" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/ss-sentimentanalysis-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="32ea8539-c5b0-4ddf-8afd-27464785027f" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="SS_SentimentAnalysis_skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="4ff5f9ab-756c-447d-b55a-40b760a02062" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/vb-cc-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="fc9bd7af-59c8-4844-b640-713bf4d88295" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="VB_CC_skill" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="ed7e1366-ad4e-4290-901f-3f3c8d959295" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/vb-englishtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="English to french translation" Id="27691029-46b5-484e-90ea-7c2fb38257f2" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="VB_EnglishToFrench_skill" OutputDescription="Translated text in French Language." ProjectId="ed7e1366-ad4e-4290-901f-3f3c8d959295" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/vb-sentimentanalysis-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="Sentiment analysis" Id="e6c8d5bc-dee0-44f2-924d-3bff74a26be1" InputDescription="Text to be analyzed.&#xA;For example: &quot;I am dissatisfied with this service.&quot;" InputType="JSON" Name="VB_SentimentAnalysis_skill" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1) Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;&#xA;For example:  '{&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}'" ProjectId="ed7e1366-ad4e-4290-901f-3f3c8d959295" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/vs-englishtofrench-skill" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="d3db66d8-0c3c-443c-8b21-f46de8857a14" InputDescription="Text to be translated. &#xA;For example: &quot;Hello world!&quot;" InputType="JSON" Name="VS_EnglishToFrench_Skill" OutputDescription="Translated text in French Language." ProjectId="14cd7639-78e5-481e-a563-87ab834b8fd5" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+          <um:MLSkill AccessUri="https://ai-uipath.deskover.com/mlskills/bdb730cc-64a3-4cd0-863e-610c55bdd91b/f0fe2487-512e-4ff6-9466-e955abf22b98/vs-languageanalysis" AccountId="bdb730cc-64a3-4cd0-863e-610c55bdd91b" Description="" Id="828da852-39bb-481f-bc2b-bf001d1856eb" InputDescription="Text to be classified as String: 'I loved this movie.'" InputType="JSON" Name="VS_LanguageAnalysis" OutputDescription="JSON with pedicted class name, associated confidence on that class prediction (between 0-1). For example: {&quot;prediction&quot;: &quot;Positive&quot;, &quot;confidence&quot;: 0.9422031841278076}" ProjectId="14cd7639-78e5-481e-a563-87ab834b8fd5" TenantId="f0fe2487-512e-4ff6-9466-e955abf22b98" />
+        </scg:List>
+      </uma:MLSkills.MLSkillList>
+    </uma:MLSkills>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="358,94" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;English: &quot;+englishPhrase.ToString+Environment.NewLine+&quot;French: &quot;+frenchPhrase.ToString]" />
+  </Sequence>
 </Activity>
